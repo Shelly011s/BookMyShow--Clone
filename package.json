@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "CI = false && craco build",
+    "build": "tailwind build src/css/tailwind.css -o dist/css/tailwind.css",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
