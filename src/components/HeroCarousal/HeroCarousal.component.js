@@ -64,6 +64,7 @@ useEffect(() => {
   <HeroSlider {...settingsLg}>
   {
     images.map((image) => (
+      
       <div className="w-full h-96 px-2 py-3">
       <img src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
       alt="testing" className="w-full h-full rounded-md"/>

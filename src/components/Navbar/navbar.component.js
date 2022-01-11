@@ -1,6 +1,8 @@
 import React from "react";
 import { BiChevronRight, BiSearch, BiChevronDown, BiMenu } from "react-icons/bi";
 import {ReactComponent as ReactLogo} from './logoBMS.svg';
+import { Link } from "react-router-dom";
+
 const NavSm = () => {
 return (
 <>
@@ -32,17 +34,16 @@ return (
 <>
 <div className="container mx-auto px-4 flex items-center justify-between">
    <div className="flex items-center w-1/2">
-      <div className="w-12 h-12">
-      <ReactLogo alt="logo" className="w-full h-full -mx-5"/>
+   <Link to={"/"}>
+      <div className="w-15 h-12 mx-4">
+      <ReactLogo alt="logo" className="w-full h-full"/>
       </div>
+   </Link>   
       <div className="w-full flex items-center bg-white gap-3 px-3 py-2 rounded-sm">
          <BiSearch />
          <input type="search" className="w-full focus:outline-none" placeholder="Search for movies, events, plays, sports and activities" />
       </div>
    </div>
-
-
-
 
    <div className="flex items-center gap-3">
    <span className="text-gray-400 text-xs flex items-center hover:text-white cursor-pointer	">

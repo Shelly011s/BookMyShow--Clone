@@ -1,9 +1,7 @@
 import axios from "axios";
 import React, {useState, useEffect} from "react";
 import EntertainmentCardSlider from "../components/Entertainment/Entertainment";
-import Premier from "../components/Premier/Premier.component.js";
 import PosterSlider from "../components/PosterSlider/PosterSlider.component";
-import TempPosters from "../config/TempPosters.config";
 
 
 const HomePage = () => {
@@ -47,7 +45,7 @@ console.log({popularMovies});
   <div className="flex flex-col gap-10">
 
   <div className="container mx-auto px-4">
-  <h1 className="text-2xl font-bold text-gray-800">
+  <h1 className="text-2xl font-bold text-gray-800 my-4">
   The best of Entertainment
   </h1>
   <EntertainmentCardSlider />
