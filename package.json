@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "npm": "8.1.4"
-  }
+  },
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@headlessui/react": "^1.4.1",
